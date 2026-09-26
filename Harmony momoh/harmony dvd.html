@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HARMONY MOMOH— DVD Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="harmony style.css"
+</head>
+<body>
+
+<video autoplay muted loop playsinline class="bg-video" id="bg-video">
+<source src="videos/harmony.mp4" type="video/mp4">
+</video>
+<div class="bg-fallback" id="bgFallback"></div>
+<div class="dust" id="dust"></div>
+<div class="vignette"></div>
+<div class="bottom-fade"></div>
+<div class="grain"></div>
+
+<header class="title"><span>ORIGINAL MOTION PICTURE SOUNDTRACK</span></header>
+
+<nav class="menu" id="menu" role="menu">
+  <button role="menuitem" aria-selected="true" data-panel="play">Play</button>
+  <button role="menuitem" aria-selected="false" data-panel="tracks">Track<br>Selection</button>
+  <div class="wordmark"><div class="rule"></div>HARMONY MOMOH<small>created to create</small></div>
+  <button role="menuitem" aria-selected="false" data-panel="about">Special<br>Features</button>
+  <button role="menuitem" aria-selected="false" data-panel="contact">Connect</button>
+</nav>
+
+<section class="panel" id="panel-play">
+  <button class="close-btn" data-close>Back</button>
+  <div class="panel-inner">
+    <h2>Play All</h2>
+    <div class="track-list" id="playGrid"></div>
+  </div>
+</section>
+
+<section class="panel" id="panel-tracks">
+  <button class="close-btn" data-close>Back</button>
+  <div class="panel-inner">
+    <h2>Track Selection</h2>
+    <div class="track-list" id="trackGrid"></div>
+  </div>
+</section>
+
+<section class="panel" id="panel-about">
+  <button class="close-btn" data-close>Back</button>
+  <div class="panel-inner">
+    <h2>Special Features</h2>
+    <p class="bio-text">Harmony Momoh is a Nigerian-American Singer, rapper and producer, who hails from Lagos but is currently in Atlanta’s music scene.</p>
+  </div>
+</section>
+
+<section class="panel" id="panel-contact">
+  <button class="close-btn" data-close>Back</button>
+  <div class="panel-inner">
+    <h2>Connect</h2>
+    <div class="links bio-text">
+      <p><a href="https://www.instagram.com/iamharmonymomoh/">Instagram</a></p>
+      <p><a href="https://open.spotify.com/artist/7jIyciV9EhXtbsHLW5QnmX">Spotify</a></p>
+      <p><a href="https://www.youtube.com/@HarmonyMomoh">Youtube</a></p>
+	  <p><a href="https://www.tiktok.com/@iamharmonymomoh">Tiktok</a></p>
+	  <p><a href="https://x.com/iamharmonymomoh">X</a></p>
+    </div>
+  </div>
+</section>
+
+<div id="screensaver"><div id="ssLogo">HARMONY MOMOH</div></div>
+
+
+<script src="harmony script.js"></script>
+</body>
+</html>
